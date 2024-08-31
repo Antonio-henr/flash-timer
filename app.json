@@ -1,8 +1,9 @@
 {
   "expo": {
+    "entryPoint": "./src/App.js",
     "name": "Flash-Timer",
     "slug": "Flash-Timer",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -14,17 +15,24 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.antonio.henr.FlashTimer",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "78aa337c-c6e1-4ed3-afa8-1ca2594a0278"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
